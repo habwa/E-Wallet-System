@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="overlay"></div>
+        <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <div class="sidebar-header">
+                    <div class="sidebar-brand">
+                        <a href="#"> XYZ-Mulla </a> </div>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#deposit">Deposit</a></li>
+                <li><a href="#withdraw"> Withdraw </a> </li>
+                <li><a href="send.html"> Send Money </a> </li>
+                <li><a href="#profile"> profile </a> </li>
+                <li><a href="#logout"> Logout </a> </li>
+
+        </nav>
+
+        <div id="page-content-wrapper ">
+            <button type="button " class="hamburger animated fadeInLeft is-closed " data-toggle="offcanvas ">  
+                <span class="hamb-top "></span>  
+                <span class="hamb-middle "></span>  
+                <span class="hamb-bottom "></span>  
+            </button>
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-8 col-lg-offset-2 ">
+                        <h1 style="text-align:center;"> Dashboard </h1>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" style="margin-left:220px; margin-top:10px;margin-bottom:10px;"> Balance: $1,000</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 48rem;margin:auto;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+        </div>
+        <div class="card" style="width: 48rem;margin:auto; margin-top:20px">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js ">
+    </script>
+    <script>
+        $(document).ready(function() {
+            var trigger = $('.hamburger'),
+                overlay = $('.overlay'),
+                isClosed = false;
+            trigger.click(function() {
+                hamburger_cross();
+            });
+
+            function hamburger_cross() {
+                if (isClosed == true) {
+                    overlay.hide();
+                    trigger.removeClass('is-open');
+                    trigger.addClass('is-closed');
+                    isClosed = false;
+                } else {
+                    overlay.show();
+                    trigger.removeClass('is-closed');
+                    trigger.addClass('is-open');
+                    isClosed = true;
+                }
+            }
+            $('[data-toggle="offcanvas "]').click(function() {
+                $('#wrapper').toggleClass('toggled');
+            });
+        });
+    </script>
+</body>
+
+</html>

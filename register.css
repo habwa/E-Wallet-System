@@ -1,0 +1,130 @@
+
+   h1 {
+    padding: 10px 0;
+    font-size: 32px;
+    text-align: center;
+    opacity:1;
+    }
+    h3 {
+      padding: 10px 0;
+      font-size: 22px;
+      text-align: center;
+      opacity:1;
+      color: #fff;
+      }
+    .main-block {
+    max-width: 30%; 
+    max-height:max-content;
+    padding: 10px 0px;
+    margin: auto;
+	border: 1px solid rgb(53, 53, 53);
+  background: white;
+  border-radius: 10px 10px 10px 10px ;
+  
+    }
+    .form {
+    margin: 0 30px;
+    color:black;
+    font-size: 20px;
+    }
+    .form input[type=text], input[type=password] {
+    width: calc(100% - 0px);
+    height: 36px;
+    margin: 13px 0 0 -5px;
+    padding-left: 10px; 
+    border-radius: 5px 5px 5px 5px;
+    background: #fff; 
+    outline:none;
+    border-left: 1px solid black;;
+    color:black;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    background:transparent;
+    margin-bottom: 10px;
+    }
+    .form input[type=password] {
+    margin-bottom: 15px;
+    }
+    .form input::placeholder
+    {
+      font-size:16px;
+      color:rgb(3, 56, 3);
+      
+    }
+  
+    .btn-block {
+    margin-top: 10px;
+    text-align: center;
+    }
+     .form button {
+    width: 50%;
+    padding: 10px 0;
+    margin: 10px;
+    border-radius: 5px; 
+    border: none;
+    background-color: #034e94;
+    font-size: 14px;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    }
+    .form button:hover {
+    background: rgb(8, 128, 175);
+    }
+.form h3
+{
+color:rgb(0, 0, 0);
+padding-top:12px;
+float: left;
+opacity: 1;
+padding-bottom: 0px;
+}
+.h1
+{
+  color:rgb(0, 0, 0);
+  opacity: 1;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 0px;
+  }
+form label{
+  color:black;
+  font-size:20px;
+  font-weight: 400;
+  opacity: 1;
+}
+.error 
+{
+  color: red;
+  font-size: 16px;
+  font-weight: 400;
+}
+.soc{
+ margin-left: 75px;
+} 
+.copyright
+{
+  margin-top: 10px;
+  text-align: center;
+}
+i{
+  width: 50px;
+  height: 50px;
+}
+@media screen and (max-width: 600px) {
+  .main-block {
+    max-width: 80%; 
+    max-height:max-content;
+    padding: 10px 0px;
+    margin: auto;
+    border-radius: 10px 10px 10px 10px ;
+	border: 1px solid black;
+	background-color:white;
+    }
+.copyright
+{
+  margin-top: 10px;
+  text-align: center;
+}
+
+}
